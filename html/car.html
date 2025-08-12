@@ -1,0 +1,77 @@
+<!DOCTYPE html>  
+<html lang="ar" dir="rtl">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>عربه المنتجات</title>  
+  
+    <!-- Bootstrap CSS -->  
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css" >  
+  
+
+    <!-- Bootstrap JS Bundle -->  
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.js"></script>  
+
+  <!-- نربط ملف التنسيق -->
+  <link rel="stylesheet" href="../css/car.css">
+</head>  
+<body>  
+  
+    <nav>  
+
+
+  <!-- الناف بار فيها زر وشعار -->
+    <nav class="navbar navbar-expand-lg ">
+
+    <!-- الشعار يكون عاليمين -->
+<a href ="../html/home.html">
+    <img  src="../img/logo.png">
+</a>
+
+    <!-- الزر حق القائمة المنسدلة -->
+    <div class="dropdown">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        <!--القائمة-->
+      </button>
+      <ul class="dropdown-menu text-end">
+        <li><a class="dropdown-item" href="../html/home.html">الرئيسية</a></li>
+        <li><a class="dropdown-item" href="../html/product.html">المتجر</a></li>
+        <li><a class="dropdown-item" href="../html/about.html">من نحن</a></li>
+        <li><a class="dropdown-item" href="../html/car.html">عربه المنتجات</a></li>
+        <li><a class="dropdown-item" href="../html/contact-us.html">تواصل معنا</a></li>
+        <li><a class="dropdown-item" href="../html/login.html">تسجيل دخول (مستخدم جديد) </a></li>
+        <li><a class="dropdown-item" href="../html/log.html">تسجيل دخول</a></li>
+      </ul>
+    </div>
+   
+         </nav>  
+  
+    <div class="container my-4">  
+        <!-- المنتجات -->  
+        <div id="product-list" class="row g-4">  
+            <!-- المنتجات معروضة هنا -->  
+        </div>  
+
+        <!-- رسالة لا توجد منتجات -->  
+        <div id="no-products-message" style="display:none; color:red; font-weight:bold; text-align:center;">  
+            لا توجد منتجات  
+        </div>  
+
+        <!-- زر التالي -->  
+        <div class="text-center mt-4">  
+            <button id="nextBtn">التالي</button>  
+        </div>  
+    </div>  
+
+     
+
+  
+  <!--ربط الجافا-->
+    
+    <!-- jQuery -->  
+    <script src="../jQuery/jquery-3.7.1.js"></script>
+    
+  <script src="../js/car.js"></script>
+
+</body>  
+</html>

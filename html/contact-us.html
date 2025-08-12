@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+
+  <!-- نربط بوتستراب -->
+  <link href="../bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+  <!-- ملف CSS خارجي خاص بالصفحة -->
+  <link rel="stylesheet" href="../css/contact.css"/>
+</head>
+<body class="Contact-page">
+
+
+  
+ 
+  <!-- الناف بار فيها زر وشعار -->
+    <nav class="navbar navbar-expand-lg ">
+
+    <!-- الشعار يكون عاليمين -->
+<a href ="../html/home.html">
+    <img  src="../img/logo.png">
+</a>
+
+    <!-- الزر حق القائمة المنسدلة -->
+    <div class="dropdown">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        <!--القائمة-->
+      </button>
+      <ul class="dropdown-menu text-end">
+        <li><a class="dropdown-item" href="../html/home.html">الرئيسية</a></li>
+        <li><a class="dropdown-item" href="../html/product.html">المتجر</a></li>
+        <li><a class="dropdown-item" href="../html/about.html">من نحن</a></li>
+        <li><a class="dropdown-item" href="../html/car.html">عربه المنتجات</a></li>
+        <li><a class="dropdown-item" href="../html/contact-us.html">تواصل معنا</a></li>
+        <li><a class="dropdown-item" href="../html/login.html">تسجيل دخول (مستخدم جديد) </a></li>
+        <li><a class="dropdown-item" href="../html/log.html">تسجيل دخول</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ✅ عنوان وتعليمات -->
+  <div class="container text-center mt-3">
+    <h2 class="mb-3"><i>تواصل معنا</i></h2>
+    <p>
+      يسعدنا تواصلك معنا. املأ النموذج أدناه وسنرد عليك في أقرب وقت.
+    </p>
+  </div>
+
+  <!-- ✅ رسالة الخطأ أو النجاح -->
+  <div id="formMessage" class="text-center my-3 fw-bold"></div>
+
+  <!-- ✅ نموذج التواصل -->
+  <div class="container mt-4">
+    <form id="contactForm" class="row g-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">الاسم</label>
+        <input type="text" class="form-control" id="name" placeholder="اكتب اسمك" />
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">البريد الإلكتروني</label>
+        <input type="email" class="form-control" id="email" placeholder="example@email.com" />
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">الرسالة</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="اكتب رسالتك هنا"></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="submit-btn px-5 btn btn-primary">إرسال</button>
+      </div>
+    </form>
+
+    <!-- ✅ رسالة النجاح -->
+    <div id="successMessage" class="alert alert-success text-center mt-4 d-none">
+      ✅ تم الإرسال بنجاح! سنقوم بالرد عليك قريبًا.
+    </div>
+  </div>
+  
+ 
+  <!-- ✅ مكتبات JavaScript -->
+  <script src="../jQuery/jquery-3.7.1.js"></script>
+  <script src="../bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+
+  <!-- ✅ ملف JavaScript خارجي -->
+  <script src="../js/contact.js"></script>
+
+</body>
+</html>

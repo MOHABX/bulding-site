@@ -1,0 +1,62 @@
+ body { 
+            font-family: Arial, sans-serif;  
+            background-color: #f5f5f5;  
+        }  
+
+
+/* نضبط الناف بار – الزر يمين والشعار يسار */
+.navbar {
+  background-color: #1995AD;           /* نخلي الخلفية رمادي غامق */
+  padding: 10px 20px;              /* نترك فراغ بسيط داخل الشريط من فوق وتحت ومن الجوانب */
+  display: flex;                   /* نحول الناف بار لتخطيط مرن */
+  justify-content: space-between; /* نخلي المسافة متساوية بينهم: زر – شعار */
+  align-items: center;            /* نوسّطهم عموديًا */
+}
+
+
+/* نخلي الشعار حجمه مضبوط */
+.navbar img {
+  height: 40px;
+}
+
+/* الزر داخل الناف بار */
+.navbar .dropdown .btn {
+  background-color: #F5F5F5;
+  color: #1995AD;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+/* يوم نحوم على الزر يتغير لونه */
+.navbar .dropdown .btn:hover {
+  background-color: #1995AD;
+}
+
+/* نخلي القائمة المنسدلة تطلع تحت الزر */
+.dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* شكل الروابط داخل القائمة */
+.dropdown-menu .dropdown-item {
+  padding: 10px 15px;
+  color: #333;
+}
+
+/* يوم نحوم على الرابط يتغير لونه */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #eee;
+}
+
+
+#nextBtn {  
+            background-color: #1995AD;  
+            border: none;  
+            color: white;  
+            padding: 10px 20px;  
+            font-size: 18px;  
+            border-radius: 8px;  
+            transition: background-color 0.3s;  
+        }  

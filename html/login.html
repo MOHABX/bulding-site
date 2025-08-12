@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registan</title>
+  
+  <link href="../bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/login.css"/>
+</head>
+<body>
+  <!-- الناف بار فيها زر وشعار -->
+    <nav class="navbar navbar-expand-lg ">
+
+    <!-- الشعار يكون عاليمين -->
+<a href ="../html/home.html">
+    <img  src="../img/logo.png">
+</a>
+    <!-- الزر حق القائمة المنسدلة -->
+    <div class="dropdown">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        <!--القائمة-->
+      </button>
+      <ul class="dropdown-menu text-end">
+        <li><a class="dropdown-item" href="../html/home.html">الرئيسية</a></li>
+        <li><a class="dropdown-item" href="../html/about.html">من نحن</a></li>
+        <li><a class="dropdown-item" href="../html/product.html">المتجر</a></li>
+        <li><a class="dropdown-item" href="../html/car.html">عربه المنتجات</a></li>
+        <li><a class="dropdown-item" href="../html/contact-us.html">تواصل معنا</a></li>
+        <li><a class="dropdown-item" href="../html/login.html">تسجيل دخول (مستخدم جديد) </a></li>
+        <li><a class="dropdown-item" href="../html/log.html">تسجيل دخول</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>سجل دخول الآن</h1>
+
+  <form>
+    <label for="username">اسم المستخدم:</label>
+    <input type="text" id="username" required />
+
+    <label for="phone">رقم الهاتف:</label>
+    <input type="tel" id="phone" required />
+
+    <label for="mail">البريد الاكترونى:</label>
+    <input type="email" id="mail" required />
+    
+    <label for="password">كلمة السر:</label>
+    <input type="password" id="password" required />
+
+    <button type="submit" id="loginBtn" class="btn btn-dark">دخول</button>
+  </form>
+
+
+  <script src="../jQuery/jquery-3.7.1.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>

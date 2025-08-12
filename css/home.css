@@ -1,0 +1,143 @@
+/* نخلي شكل الصفحة نظيف وخفيف */
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl; /* لأن الصفحه بالعربي */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* نخلي الرسالة الترحيبية في نص الصفحة */
+#welcome-msg {
+  display: none;
+  text-align: center;
+  background-color: #3cd3d8;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+/* نضبط الناف بار – الزر يمين والشعار يسار */
+.navbar {
+  background-color: #222;           /* نخلي الخلفية رمادي غامق */
+  padding: 10px 20px;              /* نترك فراغ بسيط داخل الشريط من فوق وتحت ومن الجوانب */
+  display: flex;                   /* نحول الناف بار لتخطيط مرن */
+  flex-direction: row-reverse;    /* نخلي العناصر تمشي من اليمين لليسار (عشان الزر يجي يمين) */
+  justify-content: space-between; /* نخلي المسافة متساوية بينهم: زر – شعار */
+  align-items: center;            /* نوسّطهم عموديًا */
+}
+
+
+/* نخلي الشعار حجمه مضبوط */
+.navbar img {
+  height: 40px;
+}
+
+/* الزر داخل الناف بار */
+.navbar .dropdown .btn {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+/* يوم نحوم على الزر يتغير لونه */
+.navbar .dropdown .btn:hover {
+  background-color: #777;
+}
+
+/* نخلي القائمة المنسدلة تطلع تحت الزر */
+.dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* شكل الروابط داخل القائمة */
+.dropdown-menu .dropdown-item {
+  padding: 10px 15px;
+  color: #333;
+}
+
+/* يوم نحوم على الرابط يتغير لونه */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #eee;
+}
+
+/* الزر اللي يخفي ويظهر المعرض */
+#toggle-gallery {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* يوم نحوم عليه يفتح لونه */
+#toggle-gallery:hover {
+  background-color: #000000;
+}
+
+/* نضبط المعرض الشبكي في نص الصفحة */
+.gallery {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+/* كل عنصر بالمعرض نحطه بصندوق مرتب */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* نخلي الصور والفيديوات ثابتة بالحجم وتستجيب */
+.gallery img,
+.gallery video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+/* يوم نحوم عليهم يكبرون شوي ويتغير ظلهم */
+.gallery img:hover,
+.gallery video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* الفوتر */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* الروابط داخل الفوتر */
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* يوم نحوم على الروابط تتغير */
+footer a:hover {
+  text-decoration: underline;
+    margin-top: auto;
+}

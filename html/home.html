@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>bulding sit</title>
+  <!-- نربط بوتستراب -->
+  <link href="../bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+  
+   <!-- نربط البوتستراب -->
+   <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+  <!-- الرسالة الترحيبية تطلع وتختفي -->
+  <div id="welcome-msg" class="alert alert-success text-center">
+    <p color="wight">مرحبا بك في موقعنا</p>
+  </div>
+
+  <!-- الناف بار فيها زر وشعار -->
+    <nav class="navbar navbar-expand-lg ">
+    <!-- الشعار يكون عاليمين -->
+<a href ="../html/home.html">
+    <img  src="../img/logo.png">
+</a>
+    <!-- الزر حق القائمة المنسدلة -->
+    <div class="dropdown">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        <!--القائمة-->
+      </button>
+      <ul class="dropdown-menu text-end">
+        <li><a class="dropdown-item" href="../html/home.html">الرئيسية</a></li>
+        <li><a class="dropdown-item" href="../html/about.html">من نحن</a></li>
+        <li><a class="dropdown-item" href="../html/product.html">المتجر</a></li>
+        <li><a class="dropdown-item" href="../html/car.html">عربه المنتجات</a></li>
+        <li><a class="dropdown-item" href="../html/contact-us.html">تواصل معنا</a></li>
+        <li><a class="dropdown-item" href="../html/login.html">تسجيل دخول (مستخدم جديد) </a></li>
+        <li><a class="dropdown-item" href="../html/log.html">تسجيل دخول</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- زر فوق يعرض ويخفي المعرض -->
+  <div class="text-center my-4">
+    <button id="toggle-gallery" class="btn btn-warning">معرض الصور</button>
+  </div>
+
+  <!-- المعرض نفسه شبكي -->
+  <div  id="gallery" class="container gallery">
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="../img/img1.png" alt="صورة 1" class="img-fluid rounded shadow">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="../img/img3.png" alt="صورة 3" class="img-fluid rounded shadow">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gallery-item">
+          <img src="../img/img5.png" alt="صورة 2" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!-- فقره الشركات المتعاونة معنا -->
+<section class="container text-center my-5">
+  <!-- نقول للزوار منو وقف معنا -->
+  <h3>شركأ النجاج</h3>
+  <div class="row justify-content-center">
+    <!-- شعار شركة 1 -->
+    <div class="col-4 col-md-2 my-2">
+      <img src="../img/kali-linux.png" alt="شعار شركة 1" class="img-fluid">
+    </div>
+    <!-- شعار شركة 2 -->
+    <div class="col-4 col-md-2 my-2">
+      <img src="../img/githup-icon.png" alt="شعار شركة 2" class="img-fluid">
+    </div>
+    <!-- شعار شركة 3 -->
+    <div class="col-4 col-md-2 my-2">
+      <img src="../img/ubentu.png" alt="شعار شركة 3" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+<!-- الفوتر اللي فآخر الصفحة -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+
+
+  <!-- روابط التواصل -->
+  <div>
+    <a href="https://github.com/MOHABX" target="_blank" class="text-white mx-2">GitHub</a>
+    <a href="https://wa.me/201514167081" target="_blank" class="text-white mx-2">WhatsApp</a>
+    <a href="mailto:mohabfahd015.com" class="text-white mx-2">Gmail</a>
+  </div>
+
+  <!-- كلام بسيط -->
+  <p class="mt-3 mb-0">جميع الحقوق محفوظة © 2025</p>
+</footer>
+
+
+  <!-- نربط الجيكويري -->
+  
+  <script src="../jQuery/jquery-3.7.1.js"></script>
+  <!-- كود الجافا -->
+  
+  <script src="../js/home.js"></script>
+  <!-- كود الجيكويري -->
+  <script src="../js/home-jquery.js"></script>
+  <!-- نربط ملف التنسيق -->
+</body>
+</html>
