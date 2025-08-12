@@ -118,10 +118,14 @@ body {
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
+
 .img-fluid{
 
-  height: 10vh;            /* ارتفاع الصفحة */
+
+width:140px;height:140px;border-radius:50%;
+
 }
+
 /* الفوتر */
 footer {
   background-color: #222;
@@ -133,8 +137,9 @@ footer {
 /* الروابط داخل الفوتر */
 footer a {
   color: #fff;
-  margin: 0 10px;
+  margin: 0px 10px;
   text-decoration: none;
+
 }
 
 /* يوم نحوم على الروابط تتغير */
