@@ -2,119 +2,217 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>bulding sit</title>
+  <title>Building Site</title>
+
   <!-- نربط بوتستراب -->
   <link href="../bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
-  
-   <!-- نربط البوتستراب -->
-   <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="../css/home.css">
+  <!-- نربط ملف التنسيق -->
+  <link rel="stylesheet" href="··/css/home·css">
+  <!-- أيقونات بوتستراب -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
 
-  <!-- الرسالة الترحيبية تطلع وتختفي -->
+  <!-- الرسالة الترحيبية -->
   <div id="welcome-msg" class="alert alert-success text-center">
-    <p color="wight">مرحبا بك في موقعنا</p>
+    <p style="color:white;">مرحبا بك في موقعنا</p>
   </div>
 
-  <!-- الناف بار فيها زر وشعار -->
-    <nav class="navbar navbar-expand-lg ">
-    <!-- الشعار يكون عاليمين -->
-<a href ="../html/home.html">
-    <img  src="../img/logo.png">
-</a>
-    <!-- الزر حق القائمة المنسدلة -->
-    <div class="dropdown">
-      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-        <!--القائمة-->
-      </button>
+  <!-- الناف بار -->
+  <nav class="navbar navbar-expand-lg">
+    <a href="../html/home.html">
+      <img id="logo" src="../img/logo.png" alt="شعار الموقع">
+    </a>
+    <div class="dropdown ms-auto">
+      <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"></button>
       <ul class="dropdown-menu text-end">
         <li><a class="dropdown-item" href="../html/home.html">الرئيسية</a></li>
         <li><a class="dropdown-item" href="../html/about.html">من نحن</a></li>
         <li><a class="dropdown-item" href="../html/product.html">المتجر</a></li>
-        <li><a class="dropdown-item" href="../html/car.html">عربه المنتجات</a></li>
+        <li><a class="dropdown-item" href="../html/car.html">عربة المنتجات</a></li>
         <li><a class="dropdown-item" href="../html/contact-us.html">تواصل معنا</a></li>
-        <li><a class="dropdown-item" href="../html/login.html">تسجيل دخول (مستخدم جديد) </a></li>
+        <li><a class="dropdown-item" href="../html/login.html">تسجيل دخول (مستخدم جديد)</a></li>
         <li><a class="dropdown-item" href="../html/log.html">تسجيل دخول</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- زر فوق يعرض ويخفي المعرض -->
+  <!-- نبذة بسيطة -->
+  <section class="container text-center my-5">
+    <p>
+      متخصصون في تطوير المدونات الشخصية والمتاجر الإلكترونية
+      <br>
+      ونعمل على تحويل أفكارك إلى موقع يلبي جميع احتياجاتك
+      <br>
+      نسعى لتقديم أفضل الخدمات والحلول التي تلبي جميع احتياجاتكم
+    </p>
+  </section>
+
+  <!-- خدماتنا -->
+  <section id="services" class="py-5 bg-light" dir="rtl">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">خدماتي</h2>
+        <p class="text-muted mb-0">حلول متكاملة لتصميم المدونات والمتاجر الإلكترونية</p>
+      </div>
+      <div class="row g-4">
+        <!-- الخدمة الأولى -->
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+            <div class="mb-3 fs-1 text-primary"><i class="bi bi-journal-text"></i></div>
+            <h5 class="fw-bold">تصميم مدونات احترافية</h5>
+            <p class="text-muted">إنشاء مدونات متجاوبة وسهلة التصفح، تعكس شخصيتك وتلائم محتواك.</p>
+          </div>
+        </div>
+        <!-- الخدمة الثانية -->
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+            <div class="mb-3 fs-1 text-primary"><i class="bi bi-bag-check"></i></div>
+            <h5 class="fw-bold">إنشاء متاجر إلكترونية</h5>
+            <p class="text-muted">متاجر احترافية تدعم البيع والشراء بسهولة مع أنظمة دفع آمنة.</p>
+          </div>
+        </div>
+        <!-- الخدمة الثالثة -->
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100 text-center">
+            <div class="mb-3 fs-1 text-primary"><i class="bi bi-brush"></i></div>
+            <h5 class="fw-bold">تصميم مواقع شخصية وللشركات</h5>
+            <p class="text-muted">تصميم احترافي بأحدث تقنيات التصميم والتفاعل.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- لماذا نحن -->
+  <section class="py-5" dir="rtl">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">ليش تختارنا؟</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <div class="fs-1 text-success mb-3"><i class="bi bi-lightning-charge-fill"></i></div>
+            <h5 class="fw-bold">سرعة التنفيذ</h5>
+            <p class="text-muted">نسلم مشاريعك بسرعة بدون ما نضحي بالجودة.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-shield-check"></i></div>
+            <h5 class="fw-bold">أمان عالي</h5>
+            <p class="text-muted">نحافظ على بياناتك وموقعك محمي من أي تهديد.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <div class="fs-1 text-warning mb-3"><i class="bi bi-star-fill"></i></div>
+            <h5 class="fw-bold">جودة مضمونة</h5>
+            <p class="text-muted">تصاميم احترافية ترفع من مستوى مشروعك.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- آراء العملاء -->
+  <section class="py-5 bg-light" dir="rtl">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">وش قالوا عنا عملائنا</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <p class="text-muted">"خدمة ممتازة، والتعامل راقي."</p>
+            <h6 class="fw-bold mt-3">أحمد علي</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <p class="text-muted">"نفذوا مشروعي بسرعة وبجودة عالية."</p>
+            <h6 class="fw-bold mt-3">سارة محمد</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <p class="text-muted">"أنصح أي أحد يتعامل معهم."</p>
+            <h6 class="fw-bold mt-3">خالد فهد</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- خطوات العمل -->
+  <section class="py-5" dir="rtl">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">كيف نشتغل؟</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <div class="fs-1 text-primary mb-3"><i class="bi bi-chat-dots-fill"></i></div>
+            <h6 class="fw-bold">1. نسمع فكرتك</h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <div class="fs-1 text-success mb-3"><i class="bi bi-pencil-square"></i></div>
+            <h6 class="fw-bold">2. نخطط ونصمم</h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <div class="fs-1 text-warning mb-3"><i class="bi bi-code-slash"></i></div>
+            <h6 class="fw-bold">3. نبرمج ونطور</h6>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+            <div class="fs-1 text-danger mb-3"><i class="bi bi-rocket-takeoff-fill"></i></div>
+            <h6 class="fw-bold">4. نسلم المشروع</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- زر عرض المعرض -->
   <div class="text-center my-4">
     <button id="toggle-gallery" class="btn btn-warning">معرض الصور</button>
   </div>
 
-  <!-- المعرض نفسه شبكي -->
-  <div  id="gallery" class="container gallery">
+  <!-- المعرض -->
+  <div id="gallery" class="container gallery">
     <div class="row g-3">
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="../img/img1.png" alt="صورة 1" class="img-fluid rounded shadow">
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="../img/img3.png" alt="صورة 3" class="img-fluid rounded shadow">
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="gallery-item">
-          <img src="../img/img5.png" alt="صورة 2" class="img-fluid rounded shadow">
-        </div>
-      </div>
+      <div class="col-md-4"><img src="../img/img1.png" alt="صورة 1" class="img-fluid rounded shadow"></div>
+      <div class="col-md-4"><img src="../img/img3.png" alt="صورة 3" class="img-fluid rounded shadow"></div>
+      <div class="col-md-4"><img src="../img/img4.png" alt="صورة 4" class="img-fluid rounded shadow"></div>
     </div>
   </div>
 
-
-
-
-<!-- فقره الشركات المتعاونة معنا -->
-<section class="container text-center my-5">
-  <!-- نقول للزوار منو وقف معنا -->
-  <h3>شركأ النجاج</h3>
-  <div class="row justify-content-center">
-    <!-- شعار شركة 1 -->
-    <div class="col-4 col-md-2 my-2">
-      <img src="../img/kali-linux.png" alt="شعار شركة 1" class="img-fluid">
+  <!-- الشركات المتعاونة -->
+  <section class="container text-center my-5">
+    <h3>شركاء النجاح</h3>
+    <div class="row justify-content-center">
+      <div class="col-4 col-md-2 my-2"><img src="../img/kali-linux.png" alt="شركة 1" class="img-fluid"></div>
+      <div class="col-4 col-md-2 my-2"><img src="../img/githup-icon.png" alt="شركة 2" class="img-fluid"></div>
+      <div class="col-4 col-md-2 my-2"><img src="../img/ubentu.png" alt="شركة 3" class="img-fluid"></div>
     </div>
-    <!-- شعار شركة 2 -->
-    <div class="col-4 col-md-2 my-2">
-      <img src="../img/githup-icon.png" alt="شعار شركة 2" class="img-fluid">
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div>
+      <a href="https://github.com/MOHABX" target="_blank" class="text-white mx-2">GitHub</a>
+      <a href="https://wa.me/201514167081" target="_blank" class="text-white mx-2">WhatsApp</a>
+      <a href="mailto:mohabfahd015.com" class="text-white mx-2">Gmail</a>
     </div>
-    <!-- شعار شركة 3 -->
-    <div class="col-4 col-md-2 my-2">
-      <img src="../img/ubentu.png" alt="شعار شركة 3" class="img-fluid">
-    </div>
-  </div>
-</section>
+    <p class="mt-3 mb-0">جميع الحقوق محفوظة © 2025</p>
+  </footer>
 
-<!-- الفوتر اللي فآخر الصفحة -->
-<footer class="bg-dark text-white text-center py-4 mt-5">
-
-
-  <!-- روابط التواصل -->
-  <div>
-    <a href="https://github.com/MOHABX" target="_blank" class="text-white mx-2">GitHub</a>
-    <a href="https://wa.me/201514167081" target="_blank" class="text-white mx-2">WhatsApp</a>
-    <a href="mailto:mohabfahd015.com" class="text-white mx-2">Gmail</a>
-  </div>
-
-  <!-- كلام بسيط -->
-  <p class="mt-3 mb-0">جميع الحقوق محفوظة © 2025</p>
-</footer>
-
-
-  <!-- نربط الجيكويري -->
-  
+  <!-- مكتبات الجافا -->
   <script src="../jQuery/jquery-3.7.1.js"></script>
-  <!-- كود الجافا -->
-  
   <script src="../js/home.js"></script>
-  <!-- كود الجيكويري -->
   <script src="../js/home-jquery.js"></script>
-  <!-- نربط ملف التنسيق -->
 </body>
 </html>
