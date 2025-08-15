@@ -25,7 +25,7 @@ body {
   background-color: #222;           /* نخلي الخلفية رمادي غامق */
   padding: 10px 20px;              /* نترك فراغ بسيط داخل الشريط من فوق وتحت ومن الجوانب */
   display: flex;                   /* نحول الناف بار لتخطيط مرن */
-  flex-direction: row-reverse;    /* نخلي العناصر تمشي من اليمين لليسار (عشان الزر يجي يمين) */
+
   justify-content: space-between; /* نخلي المسافة متساوية بينهم: زر – شعار */
   align-items: center;            /* نوسّطهم عموديًا */
 }
